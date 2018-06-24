@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+
+
+#background{
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 50px;
+
+}
+
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+h1 {
+    font: bold 300% Consolas, Monaco, monospace;
+    border-right: .1em solid black;
+    width: 16.5em;
+    width: 25ch;
+    margin: 2em 1em;
+    white-space: nowrap;
+    font-size:50px !important;
+
+    animation-delay: .50s !important;
+
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(25, end),
+               blink-caret .5s step-end infinite alternate;
+
+  }
+
+  @media only screen and (max-width: 526px) {
+      #hidden {
+          display: none;
+      }
+  }
+
+  .stat{
+    background-color: black;
+  }
+  .stat i{
+    font-size: 35px;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+
+
+  }
+ 
+  #formspree{
+  border: 4px solid #fed136;
+  height: auto;
+  max-width: 250px !!important;
+  text-align: center;
+  }
+  #icon_stat:hover{
+    background-color:  #fed136;
+  }
+  .stat span{
+    color: darkorange;
+    font-size: 38px;
+  }
+  .stat p{
+    color: white;
+    font-size: 15px;
+  }
+
+
+#background_overlay{
+  background-color: rgba(0,0,0,0.3) !important;
+  height: 100vh;
+}
+
+
+section{
+	padding: 60px 0;
+}
+section .section-title{
+	text-align:center;
+	color:#007b5e;
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+#what-we-do .card .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#what-we-do .card .block-1:before{
+    content: "\f17b";
+}
+#what-we-do .card .block-2:before{
+    content: "\f0e7";
+}
+#what-we-do .card .block-3:before{
+    content: "\f108";
+}
+#what-we-do .card .block-4:before{
+    content: "\f209";
+}
+#what-we-do .card .block-5:before{
+    content: "\f0a1";
+}
+#what-we-do .card .block-6:before{
+    content: "\f218";
+}
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+#background_service{
+  background-image: url('assets/darkmoon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+  color: white;
+  font-size: 35px;
+  font-family: Pacifico;
+
+}
+@media only screen and (max-width: 626px) {
+  #hero_text{
+        font-size: 20px ;
+
+
+  }
+}
+#background_service_overlay{
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  height: 50vh !important;
+}
+
+.team-member img{
+  height: 380px;
+  width: 340px;
+  border-radius: 50%;
+  border: 4px solid black;
+
+}
+#team{
+      left: 50%;
+      transform: translate(5px,0%);
+    }
+
+@media only screen and (max-width: 626px) {
+ #team{ left: 50%; transform:
+translate(20px,0%);
+max-width: 240px !important;
+max-height: 230px !important;
+ }
+}
+
+#text-name{
+left: 50%; transform: translate(0%,150px);
+}
+
+@media only screen and (max-width: 626px) {
+ .team-member{
+   left: 50%;
+   transform:translate(10px,0%) !important;
+
+ }
+}
+
+#responsive-img{
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 626px) {
+  #responsive-img{
+    max-width: 100%;
+    min-height: 335px;
+  }
+ }
+
+
+ #icon{
+   display: inline-block;
+   text-align: center;
+   font-size: 25px;
+   
+   color: #ffffff;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: black;
+ }
+
+ #icon:hover{background-color: #fed136;
+  transform: rotate(360deg);
+  -webkit-transition: all .3s;
+-moz-transition: all .3s;
+transition: all .3s;
+}
+
+#parallax_1{
+  background-image: url('assets/contact.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+}
+
+#parallax_1_overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+
+.electric{
+  background-image: url('assets/electric.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  color: #ffffff;
+  font-family: pacifico;
+  font-size: 35px;
+}
+.electric_overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 50vh;
+}
+
+
+
+@media only screen and (max-width: 626px) {
+  #my_quote{
+    font-size: 20px !important;
+  }
+ }
+
+.img-responsive{
+  height: 360px;
+  width: 340px;
+  border-radius: 50%;
+}
+#border{
+  border: 4px solid black;
+}
+#about_text{
+  top:50%;
+  transform: translate(0%,60px);
+}
+#about_image{
+  left:50%;
+  transform: translate(200px,0%);
+  
+}
+
+
+@media only screen and (max-width: 626px) {
+  #border{
+    display: none !important;
+  }
+ }
+
+ @media only screen and (max-width: 626px) {
+  #corousel-start{
+    display: none !important;
+  }
+ }
+
+ .zoom{
+  position: relative;
+  overflow: hidden;
+
+}
+.zoom:hover img{
+
+  transform: scale(1.0);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.zoom img{
+
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+#above_gallery{
+  background-image: url('assets/lake_scenery.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  color: white;
+  font-family: pacifico;
+  font-size: 30px;
+}
+
+#above_gallery_overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 50vh;
+}
+
+@media only screen and (max-width: 626px) {
+  #above_gallery{
+    font-size: 20px;
+  }
+ }
+
+ .corousel-cell{
+  width: 100%;
+  
+}
+#formspree{
+  border: 4px solid #fed136;
+  height: auto;
+  max-width: 250px !!important;
+  text-align: center;
+  }
+
+  .card-title{
+    font-size: 30px;
+  }
+  .read-more{
+    font-size: 17px;
+  }
+  .section-title{
+    font-size: 30px;
+  }
+  .team-text{
+    font-size: 35px;
+  }
+
+button{
+height: auto;
+width: auto;
+font-size: 30px !important;
+text-transform: uppercase;
+border: 3px solid #359173;
+color: #359173;
+background: transparent;
+transition: all 0.3s ease-in-out;
+  }
+  #button-style{
+    height: 40px !important;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px !important;
+    border: 3px solid black;
+    background-color: transparent;
+  }
+
+  #upper-border{
+    border-top: 4px solid black;
+  }
+
+  #title-lightbox{
+    font-size: 25px;
+  }
+
+
+
+
+  @media only screen and (max-width: 626px) {
+    #contact{
+      margin-top: -100px;
+      height: auto;
+      width: auto;
+    }
+   }
+
+  #title-contact{
+    font-size: 30px;
+  }
+  fieldset{
+    color: black;
+    font-size: 20px;
+  }
+
+  #contact-message{
+    width: 300px;
+    height: 100px;
+
+  }
+
+  #glyphicon{
+    font-size: 25px;
+  }
+
+  #text-with-arrow{
+    font-family: Dancing Script;
+    font-size: 20px;
+    color: #359173;
+  }
+  #thought{
+    margin-top: -100px;
+  }
+  #image-about{
+    margin-top: -100px;
+    border-radius: 50%;
+  }
+  #center-icon{
+    left: 50%;
+    transform: translate(-200px,0%);
+  }
+  #center-icon2{
+    left: 50%;
+    transform: translate(-190px,0%);
+  }
+  #center-icon3{
+    left: 50%;
+    transform: translate(-180px,0%);
+  }
+  #center-icon4{
+    left: 50%;
+    transform: translate(-170px,0%);
+  }
+  @media only screen and (max-width: 626px) {
+    #center-icon{
+      left: 50%;
+      transform: translate(-10vw,0%);
+    }
+    #center-icon2{
+      left: 50%;
+      transform: translate(-10vw,0%);
+    }
+    #center-icon3{
+      left: 50%;
+      transform: translate(-10vw,0%);
+    }
+    #center-icon4{
+      left: 50%;
+      transform: translate(-10vw,0%);
+    }
+   }
+
+   #img-about{
+     border-radius: 50%;
+     height: 150px;
+     width: 150px;
+     left: 50%;
+     transform: translate(68vw,0%);
+   }
+  
+   @media only screen and (max-width: 626px) {
+    #img-about{
+      display: none;
+    }
+  }
+  #box1{
+    background-color: #fff !important;
+  }
+  #box2{
+    background-color: rgb(140, 236, 223) !important;
+  }
+  #box3{
+    background-color: #fff !important;
+  }
+  #box4{
+    background-color: rgb(140, 236, 223) !important;
+  }
+
+  @media only screen and (max-width: 626px) {
+    #hide-corousel{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 626px) {
+    #above_contact{
+    
+      font-family: Dancing Script;
+      font-size: 22px !important;
+     
+    }
+  }
+
+  .above_contact{
+    background-image: url('assets/lighthouse.jpg');
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-family: Pacifico;
+    font-size: 20px;
+    text-align: center;
+  }
+  .above_contact_overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 50vh;
+  }
